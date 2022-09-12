@@ -912,7 +912,7 @@ ApplicationMain.main = function() {
 ApplicationMain.create = function(config) {
 	var app = new openfl_display_Application();
 	ManifestResources.init(config);
-	app.meta.h["build"] = "29";
+	app.meta.h["build"] = "30";
 	app.meta.h["company"] = "HaxeFlixel";
 	app.meta.h["file"] = "CKGen";
 	app.meta.h["name"] = "CKGen";
@@ -3400,7 +3400,7 @@ openfl_display_Sprite.prototype = $extend(openfl_display_DisplayObjectContainer.
 });
 var Main = function() {
 	openfl_display_Sprite.call(this);
-	this.addChild(new flixel_FlxGame(0,0,PlayState));
+	this.addChild(new flixel_FlxGame(0,0,PlayState,1,60,60,true));
 };
 $hxClasses["Main"] = Main;
 Main.__name__ = "Main";
@@ -66866,7 +66866,7 @@ var lime_utils_AssetCache = function() {
 	this.audio = new haxe_ds_StringMap();
 	this.font = new haxe_ds_StringMap();
 	this.image = new haxe_ds_StringMap();
-	this.version = 314492;
+	this.version = 511911;
 };
 $hxClasses["lime.utils.AssetCache"] = lime_utils_AssetCache;
 lime_utils_AssetCache.__name__ = "lime.utils.AssetCache";
